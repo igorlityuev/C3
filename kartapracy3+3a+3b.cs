@@ -2,6 +2,8 @@ using System.Numerics;
 using System.Security.Cryptography;
 using System.Security.Principal;
 
+
+
 internal class Program
 {
 
@@ -277,11 +279,47 @@ internal class Program
 
 
         //3.5 b
-        int suma =0;
-        for (int i = 0; i < Convert.ToInt32(Console.ReadLine()); i++) { 
+        int suma = 0;
+        for (int i = 0; i < Convert.ToInt32(Console.ReadLine()); i++)
+        {
             int b = Convert.ToInt32((Console.ReadLine()));
             suma += b;
         }
         Console.WriteLine(suma);
+
+
+        //3.6 b 
+        int suma1 = 0;
+        for (int i = 0; i < Convert.ToInt32(Console.ReadLine()); i++)
+        {
+            int b = Convert.ToInt32((Console.ReadLine()));
+            suma1 += i * 2;
+
+        }
+        Console.WriteLine(suma1);
+
+        //3.7 b
+        int suma2 = 0;
+        for (int i = 11; i < Convert.ToInt32(Console.ReadLine()); i++)
+        {
+            if (i % 2 == 1)
+            {
+                suma2 += i;
+            }
+
+        }
+        Console.WriteLine(suma2);
+
+
+        //3.8 b
+
+        for (double i = 1; i <= 1000; i++)
+        {
+            if (i % 10 == Math.Sqrt(i))
+            {
+                Console.WriteLine(i);
+            }
+        }
+
     }
 }
